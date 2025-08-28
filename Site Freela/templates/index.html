@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria Freelance - Seu Nome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Seu Nome</h1>
+            <p>Consultoria e Mentoria para Projetos Freelance</p>
+            <a href="#contato" class="btn">Solicitar Orçamento</a>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nosso Trabalho</h2>
+            <p>Ajudamos você e a sua empresa a solucionar problemas ou fazer os seus projetos de forma simples e rápida com direito a um relatorio GRATIS!<ul>
+                <li>Analise de projetos e solução</li>
+                <li>Projetos em geral independente da linguagem ou banco de dados</li>
+                <li>Projetos entregues no prazo ou seu dinheiro de volta</li>
+                <li>Preços negociáveis</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Meus Serviços</h2>
+            <div class="servico">
+                <h3>Mentoria Individual</h3>
+                <p>Sessões de 1 hora para discutir e solucionar desafios específicos do seu projeto.</p>
+            </div>
+            <div class="servico">
+                <h3>Plano de Projeto Completo</h3>
+                <p>Ajuda na criação de um plano detalhado, desde a ideia inicial até a entrega final.</p>
+            </div>
+            <div class="servico">
+                <h3>Análise e Feedback</h3>
+                <p>Revisão de projetos em andamento, identificando gargalos e oportunidades de melhoria.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+           <form action="/enviar_mensagem" method="POST">
+    <input type="text" placeholder="Seu Nome" name="name" required>
+    <input type="email" placeholder="Seu E-mail" name="email" required>
+    <textarea placeholder="Fale sobre seu projeto e suas necessidades" name="message" required></textarea>
+    <button type="submit" class="btn">Enviar Mensagem</button>
+</form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 *Sua Empresa(XXXXXX)*. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
